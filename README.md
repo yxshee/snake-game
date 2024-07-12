@@ -1,6 +1,6 @@
 # snake-game
 
-classic snake game
+
 ---
 
 **Project: 2D Snake Game Using Python**
