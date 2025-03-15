@@ -1,11 +1,11 @@
-# snake-game
+# 2D Snake Game
 
 
----
 
-**Project: 2D Snake Game Using Python**
 
-The project "2D Snake Game Using Python" implements the classic Snake game with a graphical user interface. This game is developed using Python and Pygame, providing a simple yet engaging experience.
+
+
+The project implements the classic Snake game with a graphical user interface. This game is developed using Python and Pygame, providing a simple yet engaging experience.
 
 ### Key Features:
 
