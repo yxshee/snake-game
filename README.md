@@ -1,34 +1,97 @@
-# 2D Snake Game
+# Classic Snake Game
 
+A Python implementation of the classic Snake game using the Pygame library.
 
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Setup and Installation](#setup-and-installation)
+- [How to Play](#how-to-play)
+- [Future Enhancements](#future-enhancements)
 
+## Features
+- Classic snake gameplay: control a snake to eat food and grow longer.
+- Increasing difficulty: the snake grows with each piece of food eaten.
+- Collision detection: game ends if the snake hits the walls or its own body.
+- Score tracking: displays the current score.
+- Restart option: allows playing again after a game over.
+- Simple and intuitive controls.
 
+## Screenshots
+*(Add a GIF or screenshots of your game in action here!)*
 
+**Example Screenshot Placeholder:**
+![Snake Game Screenshot](https://via.placeholder.com/600x400.png?text=Snake+Game+In+Action)
+*Replace the above URL with a link to an actual screenshot of your game.*
 
-The project implements the classic Snake game with a graphical user interface. This game is developed using Python and Pygame, providing a simple yet engaging experience.
+## Technologies Used
+- **Python 3**: Core programming language.
+- **Pygame**: A cross-platform set of Python modules designed for writing video games.
 
-### Key Features:
+## Project Structure
+The project is organized into several Python files within the `code/` directory:
+```
+/Users/venom/snake-game/
+├── code/
+│   ├── main.py             # Main script to run the game
+│   ├── game.py             # Game class, handles main game loop and logic
+│   ├── snake.py            # Snake class, manages snake behavior
+│   ├── food.py             # Food class, manages food properties
+│   ├── score.py            # Score class, manages score display
+│   └── constants.py        # Stores all constant values (colors, screen size, etc.)
+└── README.md               # This file
+```
 
-- **Gameplay**: The player controls a snake that moves around the screen, consuming food items to grow in length. The objective is to avoid colliding with the walls or the snake's own body.
-- **Graphics**: The game features a 2D grid where the snake and food items are displayed. Pygame is used to handle the graphical rendering and game mechanics.
-- **Controls**: The snake is controlled using the arrow keys (up, down, left, right) on the keyboard, allowing for smooth and responsive movement.
-- **Score**: The player's score increases as the snake consumes food items, with the score displayed on the screen. The game ends when the snake collides with itself or the screen boundaries.
-- **Real-time Updates**: The game updates in real-time, providing a seamless and interactive experience for the player.
+## Setup and Installation
+1.  **Clone the repository (or download the files):**
+    ```bash
+    # If you were using Git
+    # git clone <repository-url>
+    # cd snake-game
+    ```
+    Ensure all files are within a directory, for example, `snake-game/`. The Python scripts should be inside a `code/` subdirectory as shown in the Project Structure.
 
-### Technical Specifications:
+2.  **Install Pygame:**
+    If you don't have Pygame installed, you can install it using pip:
+    ```bash
+    pip install pygame
+    ```
 
-- **Programming Language**: Python
-- **Libraries**: Pygame
-- **Platform**: Cross-platform (Windows, Mac, Linux)
-- **Requirements**: Python 3.x, Pygame library
+3.  **Navigate to the code directory:**
+    Open your terminal or command prompt and navigate to the `code` directory where `main.py` is located.
+    ```bash
+    cd /path/to/your/snake-game/code/
+    ```
+    Replace `/path/to/your/snake-game/` with the actual path to where you've saved the project. For example, if your project is in `/Users/venom/snake-game/`, you would use:
+    ```bash
+    cd /Users/venom/snake-game/code/
+    ```
 
-### Objectives:
+4.  **Run the game:**
+    Execute the `main.py` script:
+    ```bash
+    python main.py
+    ```
 
-1. **Interactive Gameplay**: To create an engaging and interactive game that challenges the player's reflexes and strategic thinking.
-2. **Graphical Interface**: To design a visually appealing interface that enhances the gaming experience.
-3. **Educational Value**: To provide an example of game development using Python and Pygame, demonstrating concepts such as event handling, collision detection, and real-time updates.
+## How to Play
+-   Use the **Arrow Keys** (Up, Down, Left, Right) or **WASD Keys** to control the direction of the snake.
+-   The objective is to eat the **red food blocks** that appear on the screen.
+-   Each time the snake eats food, it grows longer, and your score increases.
+-   The game ends if the snake collides with the boundaries of the game window or with its own body.
+-   After a "Game Over", you can press:
+    -   **R** to Restart the game.
+    -   **Q** to Quit the game.
 
-This project showcases the potential of Python and Pygame in developing classic arcade games, offering both entertainment and educational value to users and developers alike.
+## Future Enhancements
+-   Different difficulty levels (e.g., faster snake, more obstacles).
+-   High score saving and display.
+-   Power-ups (e.g., temporarily slow down, shrink snake).
+-   Sound effects and background music.
+-   More visual themes or skins for the snake and food.
 
 ---
+
+Enjoy the game!
 
