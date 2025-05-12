@@ -1,5 +1,5 @@
 import pygame
-from code.constants import BLOCK_SIZE, LIGHT_GREEN, DARK_GREEN, SCREEN_WIDTH, SCREEN_HEIGHT
+from constants import BLOCK_SIZE, LIGHT_GREEN, DARK_GREEN, SCREEN_WIDTH, SCREEN_HEIGHT, BLACK
 
 class Snake:
     def __init__(self, start_x, start_y):
@@ -36,7 +36,6 @@ class Snake:
             pygame.draw.rect(surface, color, (segment[0], segment[1], self.block_size, self.block_size))
             # Optional: draw a border for better visibility
             pygame.draw.rect(surface, BLACK, (segment[0], segment[1], self.block_size, self.block_size), 1)
-
 
     def get_head_position(self):
         return self.body[0]

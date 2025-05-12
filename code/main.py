@@ -1,6 +1,6 @@
 import pygame
-from code.game import Game # Assuming game.py contains the Game class
-from code.constants import SCREEN_WIDTH, SCREEN_HEIGHT, BLOCK_SIZE, FPS
+from game import Game # Assuming game.py contains the Game class
+from constants import SCREEN_WIDTH, SCREEN_HEIGHT, BLOCK_SIZE, FPS
 
 def main():
     game_instance = Game(width=SCREEN_WIDTH, height=SCREEN_HEIGHT, block_size=BLOCK_SIZE)
