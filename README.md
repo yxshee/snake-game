@@ -1,3 +1,5 @@
+<img width="389" alt="image" src="https://github.com/user-attachments/assets/1ef8274f-2d06-4119-b6bc-09ac516ed051" />
+
 # Snake Game
 
 A Python implementation of the classic Snake game using the Pygame library.
