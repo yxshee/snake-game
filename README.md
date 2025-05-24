@@ -1,23 +1,11 @@
 <img width="389" alt="image" src="https://github.com/user-attachments/assets/1ef8274f-2d06-4119-b6bc-09ac516ed051" />
 
 # Snake Game 🚀
-- ***A slithering adventure in Python and Pygame!***
-
-```
-     /^\/^\
-   _|__|  O|
- \/     \/ \|
-  \  ___  /  |
-   \/   \/\  |
-      ||   ||
-      ||   ||
-```
+***A slithering adventure in Python and Pygame!***
 
 [![Python](https://img.shields.io/badge/python-3.10+-blue)](https://www.python.org/)
 [![Pygame](https://img.shields.io/badge/pygame-2.1+-green)](https://www.pygame.org/news)
 
-## 🎮 Live Demo (Local Preview)
-![Gameplay Preview](assets/images/gameplay.gif)
 
 ## Table of Contents
 - [Features](#features)
