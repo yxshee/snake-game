@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS files
+.DS_Store
+
+# High score file
+highscore.txt
+
+# Assets
+assets/
+
+# Virtual environments
+env/
+venv/

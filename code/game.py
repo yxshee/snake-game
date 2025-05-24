@@ -2,6 +2,7 @@ import pygame
 from snake import Snake 
 from food import Food
 from score import Score
+from highscore import HighScore
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT, BLOCK_SIZE, FPS, BLACK, RED, WHITE, FONT_SIZE_MESSAGE, FONT_SIZE_SCORE
 
 class Game:
@@ -21,6 +22,8 @@ class Game:
                            self.height // 2 - (self.height // 2 % self.block_size))
         self.food = Food(self.width, self.height, self.block_size)
         self.score = Score(10, 10, font_size=FONT_SIZE_SCORE)
+        self.highscore = HighScore()
+        self.font_highscore = pygame.font.SysFont(None, FONT_SIZE_SCORE)
         # Ensure food doesn't spawn on the snake initially
         while self.food.position in self.snake.body:
             self.food.respawn()
@@ -92,6 +95,7 @@ class Game:
 
                 # Check for game over conditions
                 if self.snake.check_collision_with_walls() or self.snake.check_collision_with_self():
+                    self.highscore.update(self.score.score)
                     self.game_over_flag = True
                 
                 # Drawing
@@ -99,6 +103,7 @@ class Game:
                 self.snake.draw(self.screen)
                 self.food.draw(self.screen)
                 self.score.display(self.screen)
+                self.highscore.display(self.screen, self.font_highscore, 10, FONT_SIZE_SCORE + 10)
                 pygame.display.flip()
 
             self.clock.tick(self.fps)
